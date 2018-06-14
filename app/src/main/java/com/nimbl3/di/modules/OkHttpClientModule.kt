@@ -10,9 +10,8 @@ import okhttp3.logging.HttpLoggingInterceptor
 @Module
 class OkHttpClientModule {
     @Provides
-    fun provideOkHttpClient(apiRequestInterceptor: AppRequestInterceptor,
-                            httpLoggingInterceptor: HttpLoggingInterceptor): OkHttpClient {
-        val httpClient = OkHttpClient.Builder().addInterceptor(apiRequestInterceptor)
+    fun provideOkHttpClient(httpLoggingInterceptor: HttpLoggingInterceptor): OkHttpClient {
+        val httpClient = OkHttpClient.Builder().addInterceptor(AppRequestInterceptor())
         if (BuildConfig.DEBUG) {
             httpClient.addInterceptor(httpLoggingInterceptor)
         }

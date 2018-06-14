@@ -1,10 +1,15 @@
 package com.nimbl3.di
 
+import com.nimbl3.TemplateApplication
+import com.nimbl3.di.modules.ActivityBuilderModule
+import com.nimbl3.di.modules.AppModule
+import com.nimbl3.di.modules.FrescoModule
+import com.nimbl3.di.modules.GsonModule
+import com.nimbl3.di.modules.OkHttpClientModule
+import com.nimbl3.di.modules.ViewModelFactoryModule
 import dagger.Component
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
-import com.nimbl3.TemplateApplication
-import com.nimbl3.di.modules.*
 import javax.inject.Singleton
 
 @Singleton
@@ -12,11 +17,11 @@ import javax.inject.Singleton
     AndroidSupportInjectionModule::class,
     ViewModelFactoryModule::class,
     AppModule::class,
-    RetrofitModule::class,
     GsonModule::class,
+    FrescoModule::class,
     OkHttpClientModule::class,
-    SchedulersModule::class,
-    ActivityBuilderModule::class])
+    ActivityBuilderModule::class
+])
 interface ApplicationComponent : AndroidInjector<TemplateApplication> {
 
     @Component.Builder

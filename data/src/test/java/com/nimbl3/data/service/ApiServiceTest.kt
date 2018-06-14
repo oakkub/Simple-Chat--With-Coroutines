@@ -1,13 +1,9 @@
 package com.nimbl3.data.service
 
 import com.google.gson.Gson
-import com.google.gson.GsonBuilder
 import com.nimbl3.data.lib.schedulers.SchedulersProvider
 import com.nimbl3.data.lib.schedulers.SchedulersProviderImpl
-import com.nimbl3.data.service.providers.ApiRepositoryProvider
-import com.nimbl3.data.service.providers.ApiServiceProvider
 import com.nimbl3.data.service.providers.ConverterFactoryProvider
-import com.nimbl3.data.service.providers.RetrofitProvider
 import okhttp3.OkHttpClient
 import org.junit.Assert
 import org.junit.Test

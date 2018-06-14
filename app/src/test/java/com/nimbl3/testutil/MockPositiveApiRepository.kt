@@ -1,6 +1,5 @@
 package com.nimbl3.testutil
 
-import com.nimbl3.data.service.ApiRepository
 import com.nimbl3.data.service.response.ExampleChildrenDataResponse
 import com.nimbl3.data.service.response.ExampleChildrenResponse
 import com.nimbl3.data.service.response.ExampleDataResponse

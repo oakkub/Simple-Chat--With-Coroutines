@@ -1,0 +1,142 @@
+{
+  "project_info": {
+    "project_number": "322372639734",
+    "firebase_url": "https://test-650a7.firebaseio.com",
+    "project_id": "test-650a7",
+    "storage_bucket": "test-650a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322372639734:android:c1f0f09aa42eba16",
+        "android_client_info": {
+          "package_name": "com.google.firebase.example.fireeats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322372639734-lpip98552tn7fc227oeof5a9b8rh1f2a.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "322372639734-lpip98552tn7fc227oeof5a9b8rh1f2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3KwTRFHSHtHXmNd2VaNjlKvfGUDqFTss"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322372639734:android:2dff73dc513ab447",
+        "android_client_info": {
+          "package_name": "com.nimbl3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322372639734-hgptqn5pistf701bvjrb901lermm4r4r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nimbl3",
+            "certificate_hash": "1f1858c89063e3b1a7066f0d4b32d078f6b018eb"
+          }
+        },
+        {
+          "client_id": "322372639734-lpip98552tn7fc227oeof5a9b8rh1f2a.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "322372639734-lpip98552tn7fc227oeof5a9b8rh1f2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3KwTRFHSHtHXmNd2VaNjlKvfGUDqFTss"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322372639734-lpip98552tn7fc227oeof5a9b8rh1f2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322372639734:android:52abbe470dbb7091",
+        "android_client_info": {
+          "package_name": "com.nimbl3.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322372639734-k7inh8it4fb68lc6kpdns3aob7od588j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nimbl3.staging",
+            "certificate_hash": "1f1858c89063e3b1a7066f0d4b32d078f6b018eb"
+          }
+        },
+        {
+          "client_id": "322372639734-lpip98552tn7fc227oeof5a9b8rh1f2a.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "322372639734-lpip98552tn7fc227oeof5a9b8rh1f2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3KwTRFHSHtHXmNd2VaNjlKvfGUDqFTss"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322372639734-lpip98552tn7fc227oeof5a9b8rh1f2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

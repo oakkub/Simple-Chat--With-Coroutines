@@ -62,22 +62,24 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation(
-        "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
-        "androidx.core:core-ktx:$android_ktx_version"
+            "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+            "androidx.core:core-ktx:$android_ktx_version"
     )
 
     api(
-        "com.squareup.retrofit2:retrofit:$retrofit_version",
-        "com.squareup.retrofit2:converter-gson:$retrofit_version",
-        "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version",
-        "com.google.code.gson:gson:$gson_version",
+            "com.squareup.retrofit2:retrofit:$retrofit_version",
+            "com.squareup.retrofit2:converter-gson:$retrofit_version",
+            "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version",
+            "com.google.code.gson:gson:$gson_version",
 
-        "com.squareup.okhttp3:okhttp:$okhttp_version",
-        "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+            'com.google.firebase:firebase-auth:16.0.1',
+            'com.google.firebase:firebase-database:16.0.1',
+            "com.squareup.okhttp3:okhttp:$okhttp_version",
+            "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
     )
 
     testImplementation(
-        "junit:junit:$test_junit_version",
-        "com.nhaarman:mockito-kotlin:$test_mockito_version",
+            "junit:junit:$test_junit_version",
+            "com.nhaarman:mockito-kotlin:$test_mockito_version",
     )
 }

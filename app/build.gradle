@@ -156,3 +156,5 @@ dependencies {
             'androidx.test:rules:1.1.0-alpha3'
     )
 }
+
+apply plugin: 'com.google.gms.google-services'

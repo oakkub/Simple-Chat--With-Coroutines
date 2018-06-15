@@ -66,12 +66,21 @@ dependencies {
             "androidx.core:core-ktx:$android_ktx_version"
     )
 
+    kapt(
+            "com.google.dagger:dagger-compiler:$dagger_version",
+            "com.google.dagger:dagger-android-processor:$dagger_version"
+    )
+
     api(
             "com.squareup.retrofit2:retrofit:$retrofit_version",
             "com.squareup.retrofit2:converter-gson:$retrofit_version",
             "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version",
             "com.google.code.gson:gson:$gson_version",
 
+            "com.google.dagger:dagger:$dagger_version",
+            "com.google.dagger:dagger-android-support:$dagger_version",
+
+            'com.google.firebase:firebase-core:16.0.1',
             'com.google.firebase:firebase-auth:16.0.1',
             'com.google.firebase:firebase-database:16.0.1',
             "com.squareup.okhttp3:okhttp:$okhttp_version",

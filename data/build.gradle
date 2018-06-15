@@ -80,6 +80,7 @@ dependencies {
             "com.google.dagger:dagger:$dagger_version",
             "com.google.dagger:dagger-android-support:$dagger_version",
 
+            'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.2',
             'com.google.firebase:firebase-core:16.0.1',
             'com.google.firebase:firebase-auth:16.0.1',
             'com.google.firebase:firebase-database:16.0.1',

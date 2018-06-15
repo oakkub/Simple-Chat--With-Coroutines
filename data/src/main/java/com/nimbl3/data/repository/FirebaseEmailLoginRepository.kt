@@ -1,11 +1,17 @@
 package com.nimbl3.data.repository
 
+import android.app.ProgressDialog.show
 import com.google.android.gms.tasks.Tasks
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException
+import kotlinx.coroutines.experimental.CommonPool
+import kotlinx.coroutines.experimental.async
+import kotlinx.coroutines.experimental.delay
+import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.experimental.withContext
 import java.util.concurrent.ExecutionException
 import javax.inject.Inject
 import kotlin.coroutines.experimental.Continuation
@@ -46,7 +52,8 @@ class FirebaseEmailLoginRepository @Inject constructor(val firebaseAuth: Firebas
 
         try {
             val userCreatedResult = Tasks.await(firebaseAuth.createUserWithEmailAndPassword(username, password))
-            resumeWithSuccessResult(continuation, userCreatedResult)
+            val user = userCreatedResult.user
+            continuation.resume(LoginResult.Success(user.uid, user.email ?: ""))
         } catch (e: ExecutionException) {
             when (e.cause) {
                 is FirebaseAuthWeakPasswordException -> continuation.resume(LoginResult.YourPasswordSucks)
